@@ -29,7 +29,7 @@ export default class Product extends Component {
                         
                     </ProductConsumer>
 
-                    {/*card footer*/}
+                    {/* footer*/}
                     <div className="card-footer d-flex justify-content-between ">
                         <p className="align-self-center mb-0" > {title} </p>
                         <h5 className="text-blue font-italic mb-0"> <span className="mr-1">$</span>{price}</h5>
@@ -63,7 +63,7 @@ const ProductWrapper = styled.div`
     transition: all 1s linear;
 }
 &:hover {
-    .card{
+    .card {
         border : 0.04rem solid rgba(0,0,0,0.2);
         box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     }
@@ -81,7 +81,8 @@ const ProductWrapper = styled.div`
 .img-container:hover .card-img-top {
     transform: scale(1.2);
 }
-.card-btn {
+ 
+.cart-btn {
     position : absolute;
     bottom :0;
     right: 0;
@@ -94,7 +95,7 @@ const ProductWrapper = styled.div`
     transorm: translate(100%,100%);
     transition : all 1s linear;
 }
-.img-container:hover .card-btn {
+.img-container:hover .cart-btn {
     transform: translate(0,0);
 }
 .cart-btn:hover {

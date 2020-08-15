@@ -17,17 +17,16 @@ export default class Navbar extends Component {
                             products
                         </Link>
                     </li> 
-                    <li>
-                        <Link to="/cart" className = "ml-auto">
-                            <ButtonContainer>
-                                <span className="mr-2 ">
-                                    <i className="fas fa-cart-plus" />
-                                </span>
-                                my cart
-                            </ButtonContainer>
-                        </Link>
-                    </li>    
-                </ul>                                                                   
+                </ul> 
+                <Link to="/cart" className = "ml-auto">
+                    <ButtonContainer>
+                        <span className="mr-2 ">
+                            <i className="fas fa-cart-plus" />
+                        </span>
+                        my cart
+                    </ButtonContainer>
+                </Link>
+                                                                                      
             </NavWrapper>
         );
     }
